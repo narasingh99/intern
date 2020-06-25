@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>Form</head>
+<body>
+	<br><br><br>
+<form action="/action_page.php" method="POST">
+	<label for="name">Name</label><br>
+	<input type="text" id="name" name="name"><br>
+	
+    <label for="number">Number</label><br>
+    <input type="tel" id="number" name="phone" pattern="[789][0-9]{9}" ><br>
+    
+
+Gender<br>
+<input type="radio" id="male" name="Gender" value="Male">
+<label for="male">Male</label><br>
+
+<input type="radio" id="female" name="Gender" value="Female">
+<label for="female">Female</label><br>
+
+<label for="Course">Course Name</label><br>
+<input type="radio" id="Course" name="Course">Bachelor's
+<input type="radio" id="Course" name="Course">Master's<br>
+SUBJECTS INTERESTS<br>
+<input type = "checkbox" name = "maths" value = "on"> Maths
+<input type = "checkbox" name = "physics" value = "on"> Physics
+<input type = "checkbox" name = "chemistry" value = "on"> Chemistry<br>
+<label for="desc">Description</label><br>
+<input type="text" name="desc"> <br>
+<input type="submit" value="Submit">
+
+</form>
+</body>
+</html>
