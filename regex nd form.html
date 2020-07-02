@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Regular expression</title>
+	<script type="text/javascript">
+	function validate()
+	{
+		var num=document.getElementById('uname').value;
+		var regex=/^[7-9]\d{9}$/;
+		if(regex.test(num))
+		{
+			//alert("Valid Username");
+			document.getElementById("ilabel").visibility="hidden"
+		}
+		else
+		{
+			alert("Invalid Number");
+			document.getElementById("ilabel").visibility="visible";
+		}
+	}
+</script>
+</head>
+<body>
+	<form action="message.html">
+		<input type="text" id="num" placeholder="Enter Username">
+		<label id="ilabel"  visibility: hidden>Invalid</label><br>
+		<button onclick="validate()" type="Submit">Submit</button>
+	</form>
+</body>
+</html>

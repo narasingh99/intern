@@ -1,45 +1,41 @@
 <!DOCTYPE html>
-<html>
-<body>
-
-<h2>Semester End Grades</h2>
-<style>
-table,td,th {
-  border: 2px solid blue;
-  border-collapse: collapse;
-  }
-td,th{
-padding: 5px;
-text-align:center;
-}
-table{
- border-spacing: 15px;
- }
-</style>
-
-<table style="width:45%">
-<caption>Report Card</caption>
-  <tr>
-    <th>Subject</th>
-    <th>Grade</th> 
-    <th>Points</th>
-  </tr>
-  <tr>
-    <td>Math</td>
-    <td>A</td>
-    <td>8</td>
-  </tr>
-  <tr>
-    <td>Physics</td>
-    <td>A+</td>
-    <td>9</td>
-  </tr>
-  <tr>
-    <td>C</td>
-    <td>O</td>
-    <td>10</td>
-  </tr>
+<html lang="en">
+<head>
+	<title>Average</title></head>
+	<body>
+<script>
+	function calculateT()
+	{
+		var m1=document.getElementById('m1').value;
+		var m2=document.getElementById('m2').value;
+		var total=Number(m1)+Number(m2);
+		document.write("Total=" +total);
+	}
+	function calculateA()
+	{
+		var m1=document.getElementById('m1').value;
+		var m2=document.getElementById('m2').value;
+		var avg=(Number(m1)+Number(m2)/2);
+		document.write("Average=" +avg);
+	}
+</script>
+	<h1>Marks Table</h1>
+<p>
+	<form>
+	<table>
+		<tr>
+			<td>Math</td>
+			<td><input type="Number" id="m1"> </td>
+		</tr>
+		<tr>
+			<td>Physics</td>
+			<td><input type="Number" id="m2"></td>
+		</tr>
 </table>
+	<input type="button" onclick="document.write("Total="+total)" value="Calculate Total">
+	<input type="button" onclick="document.write("Average="+avg)" value="Calculate Avg">
+    </form>
 
+</p>
 </body>
 </html>
